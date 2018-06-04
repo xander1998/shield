@@ -34,7 +34,7 @@ function EnableShield()
         Citizen.Wait(100)
     end
 
-    local shield = CreateObject(GetHashKey(prop), pedPos.x, pedPos.y, pedPos.z, 0, 1, 1)
+    local shield = CreateObject(GetHashKey(prop), pedPos.x, pedPos.y, pedPos.z, 1, 1, 1)
     shieldEntity = shield
     AttachEntityToEntity(shieldEntity, ped, GetEntityBoneIndexByName(ped, "IK_L_Hand"), 0.0, -0.05, -0.10, -30.0, 180.0, 40.0, 0, 0, 1, 0, 0, 1)
     SetWeaponAnimationOverride(ped, GetHashKey("Gang1H"))
